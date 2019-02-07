@@ -7,14 +7,12 @@ logo: "/images/vue.svg"
 slug: menjelajah-vue-pengenalan-awal
 ---
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+I was recently tasked with creating a simple command line program that would take an input of a file of unknown contents and print a hex dump as the output. However, I didn’t really know how I could access the data of the file to begin with, and I didn’t know what a hex dump was. So I’m going to share with you what I learned and what I wrote to accomplish this task.
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+Which will run a hexdump.js program on a file (data) and output the hex dump.
 
-Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+The file can be anything – an image, a binary, a regular text file, or a file with other encoded data. In my particular case, it was a ROM.
 
-Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+If you’ve ever tried opening a non text-based file with a text editor, you’ll remember seeing a jumbled mess of random characters. If you’ve ever wondered how a program could access that raw data and work with it, this article might be enlightening.
 
-Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
-
-Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
+This article will consist of two parts: the first, background information explaining what a hex dump is, what bits and bytes are, how to calculate values in base 2, base 10, and base 16, and an explanation of printable ASCII characters. The second part will be writing the hex dump function in Node.
