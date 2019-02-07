@@ -1,16 +1,16 @@
 <template>
   <Layout>
     <Cover />
-    <arrow-down-style>
+    <div class="arrow-down">
       <p>scroll down move.</p>
-    </arrow-down-style>
+    </div>
     <div class="article-wrapper">
       <h3>Journal posts</h3>
       <ul>
         <li v-for="{ node } in $page.allBlogPost.edges" :key="node._id">
           <g-link :to="node.path">
             <div class="journal-title">
-              <g-image :key="node.path" :src="node.logo" alt="" width="26"/>
+              <g-image :key="node.path" :src="node.logo" alt="logo_tech" width="26"/>
               <h2 class="journal-title--h2" v-html="node.title" />
             </div>
             <div class="journal-desc" v-html="node.fields.description"/>
@@ -55,12 +55,20 @@
 
 <script>
 import Cover from '~/components/Cover.vue'
-import ArrowDownStyle from '~/components/ArrowDown.styled.js'
 
 export default {
  components: {
-   Cover,
-   'arrow-down-style': ArrowDownStyle
+   Cover
  }
 }
 </script>
+<style lang="scss">
+.arrow-down {
+  p {
+    text-align: center;
+    font-weight: bold;
+    cursor: s-resize;
+  }
+  padding-top: 30px;
+}
+</style>
