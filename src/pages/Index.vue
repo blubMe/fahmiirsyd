@@ -54,7 +54,7 @@
 </page-query>
 
 <script>
-import Cover from '~/components/Cover.vue'
+const Cover = () =>  ('~/components/Cover.vue')
 import ArrowDownStyle from '~/components/ArrowDown.styled.js'
 
 export default {

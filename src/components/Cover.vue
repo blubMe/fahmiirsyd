@@ -19,7 +19,7 @@
   </div>
 </template>
 <script>
-import LinkYellowStyle from './Linkyellow.styled.js'
+const LinkYellowStyle = () => import('./Linkyellow.styled.js')
 
 export default {
   components: {
