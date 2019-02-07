@@ -14,6 +14,14 @@ module.exports = {
         typeName: 'BlogPost',
         route: '/:slug'
       }
+    },
+    {
+      use: '@gridsome/plugin-critical',
+      options: {
+        paths: ['/'],
+        width: 1300,
+        height: 900
+      }
     }
   ]
 }

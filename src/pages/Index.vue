@@ -4,7 +4,7 @@
     <arrow-down-style>
       <p>scroll down move.</p>
     </arrow-down-style>
-    <articles-style>
+    <div class="article-wrapper">
       <h3>Journal posts</h3>
       <ul>
         <li v-for="{ node } in $page.allBlogPost.edges" :key="node._id">
@@ -18,7 +18,7 @@
           <span v-html="node.date" />
         </li>
       </ul>
-    </articles-style>
+    </div>
     <articles-style>
       <h3>My project labs</h3>
       <ul v-if="$page.allBlogPost.edgess">
@@ -56,13 +56,12 @@
 <script>
 import Cover from '~/components/Cover/Cover.vue'
 import ArrowDownStyle from '~/components/ArrowDown.styled.js'
-import { ArticlesStyle } from './Index.styled.js'
+import '~/assets/sass/index.scss'
 
 export default {
  components: {
    Cover,
-   'arrow-down-style': ArrowDownStyle,
-   'articles-style': ArticlesStyle
+   'arrow-down-style': ArrowDownStyle
  }
 }
 </script>
