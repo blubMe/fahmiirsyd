@@ -1,0 +1,72 @@
+<template>
+  <Layout>
+    <Cover />
+    <arrow-down-style>
+      <p>scroll down move.</p>
+    </arrow-down-style>
+    <articles-style>
+      <h3>Journal posts</h3>
+      <ul>
+        <li v-for="{ node } in $page.allBlogPost.edges" :key="node._id">
+          <g-link :to="node.path">
+            <div class="journal-title">
+              <g-image :key="node.path" :src="node.logo" alt="" width="26"/>
+              <h2 class="journal-title--h2" v-html="node.title" />
+            </div>
+            <div class="journal-desc" v-html="node.fields.description"/>
+          </g-link>
+          <span v-html="node.date" />
+        </li>
+      </ul>
+    </articles-style>
+    <articles-style>
+      <h3>My project labs</h3>
+      <ul v-if="$page.allBlogPost.edgess">
+        <li v-for="{ node } in $page.allBlogPost.edges" :key="node._id">
+          <g-link :to="node.path">
+            <h2 v-html="node.title" />
+          </g-link>
+          <span v-html="node.date" />
+        </li>
+      </ul>
+      <div id="no-labs" v-else>I didnt have any project</div>
+    </articles-style>
+  </Layout>
+</template>
+
+<page-query>
+  query Home ($page: Int) {
+    allBlogPost (page: $page) {
+      edges {
+        node {
+          _id
+          title
+          date (format: "D MMMM, YYYY")
+          fields {
+            description
+          }
+          path
+          logo
+        }
+      }
+    }
+  }
+</page-query>
+
+<script>
+import Cover from '~/components/Cover/Cover.vue'
+import ArrowDownStyle from '~/components/ArrowDown.styled.js'
+import { ArticlesStyle } from './Index.styled.js'
+
+export default {
+ components: {
+   Cover,
+   'arrow-down-style': ArrowDownStyle,
+   'articles-style': ArticlesStyle
+ }
+}
+</script>
+
+<style scoped>
+
+</style>
