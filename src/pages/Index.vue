@@ -56,7 +56,6 @@
 <script>
 import Cover from '~/components/Cover/Cover.vue'
 import ArrowDownStyle from '~/components/ArrowDown.styled.js'
-import '~/assets/sass/index.scss'
 
 export default {
  components: {
@@ -65,7 +64,3 @@ export default {
  }
 }
 </script>
-
-<style scoped>
-
-</style>
