@@ -1,10 +1,10 @@
 <template>
-  <div class="content">
+  <div class="content-wrapper">
     <slot />
   </div>
 </template>
 <style scoped>
-.content {
+.content-wrapper {
   margin: 0 auto;
   padding: 80px 40px 0 40px;
   width: 1040px;

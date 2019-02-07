@@ -1,22 +1,18 @@
 <template>
   <Layout>
-    <article-style>
+    <article class="journal">
       <h1>{{ $page.blogPost.title }}</h1>
       <span>{{ $page.blogPost.date }}</span>
       <g-image v-if="$page.blogPost.image" :src="$page.blogPost.image" />
       <br v-else/>
       <div class="content" v-html="$page.blogPost.content" />
-    </article-style>
+    </article>
   </Layout>
 </template>
 
 <script>
-import ArticlePost from './BlogPost.styled.js'
 
 export default {
-  components: {
-    'article-style': ArticlePost
-  },
   metaInfo () {
     return {
       title: this.$page.blogPost.title
