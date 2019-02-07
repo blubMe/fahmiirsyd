@@ -4,21 +4,8 @@
     "builds": [
       {
         "src": "package.json",
-        "use": "npm run build",
-        "config": { "distDir": "dist" }
+        "use": "@now/static-build"
       }
     ],
-    "alias": ["fahmiirsyd.now.sh"],
-    "routes": [
-      {
-        "src": "/static",
-        "dest": "/404.html",
-        "status": 404
-      },
-      {
-        "src": "/static/",
-        "dest": "/404.html",
-        "status": 404
-      }
-    ]
+    "alias": ["fahmiirsyd.now.sh"]
   }
