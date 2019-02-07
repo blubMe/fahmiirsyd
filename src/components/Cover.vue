@@ -19,12 +19,12 @@
   </div>
 </template>
 <script>
-const LinkYellowStyle = () => import('./Linkyellow.styled.js')
+// const LinkYellowStyle = () => import('./Linkyellow.styled.js')
 
-export default {
-  components: {
-    'link-yellow-style': LinkYellowStyle
-  }
-}
+// export default {
+//   components: {
+//     'link-yellow-style': LinkYellowStyle
+//   }
+// }
 </script>
 

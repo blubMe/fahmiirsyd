@@ -19,7 +19,7 @@
         </li>
       </ul>
     </div>
-    <articles-style>
+    <div class="article-wrapper">
       <h3>My project labs</h3>
       <ul v-if="$page.allBlogPost.edgess">
         <li v-for="{ node } in $page.allBlogPost.edges" :key="node._id">
@@ -30,7 +30,7 @@
         </li>
       </ul>
       <div id="no-labs" v-else>I didnt have any project</div>
-    </articles-style>
+    </div>
   </Layout>
 </template>
 
@@ -54,7 +54,7 @@
 </page-query>
 
 <script>
-const Cover = () =>  ('~/components/Cover.vue')
+import Cover from '~/components/Cover.vue'
 import ArrowDownStyle from '~/components/ArrowDown.styled.js'
 
 export default {
