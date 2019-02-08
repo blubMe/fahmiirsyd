@@ -19,7 +19,10 @@
 export default {
   metaInfo () {
     return {
-      title: this.$page.blogPost.title
+      title: this.$page.blogPost.title,
+      htmlAttrs: {
+        lang: 'id'
+      }
     }
   }
 }

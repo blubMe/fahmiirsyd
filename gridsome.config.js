@@ -6,6 +6,8 @@
 
 module.exports = {
   siteName: 'fahmiirsyd',
+  "titleTemplate": "%s - My little journey",
+  "icon": "src/favicon.png",
   plugins: [
     {
       use: '@gridsome/source-filesystem',
