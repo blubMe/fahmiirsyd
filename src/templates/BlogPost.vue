@@ -2,9 +2,13 @@
   <Layout>
     <article class="journal">
       <h1>{{ $page.blogPost.title }}</h1>
-      <span>{{ $page.blogPost.date }}</span>
-      <g-image v-if="$page.blogPost.image" :src="$page.blogPost.image" />
-      <br v-else/>
+      <p class="journal__date">{{ $page.blogPost.date }} / &#x26FA; {{$page.blogPost.timeToRead}} menit membaca</p>
+      <div v-if="$page.blogPost.image" class="preload-img__wrapper">
+        <div class="preload-img">
+          <g-image :src="$page.blogPost.image" />
+        </div>
+        <span class="preload-img__detail">photo taken by thedesignest.net</span>
+      </div>
       <div class="content" v-html="$page.blogPost.content" />
     </article>
   </Layout>
@@ -25,9 +29,10 @@ export default {
   query BlogPost ($path: String!) {
     blogPost (path: $path) {
       title
-      date (format: "MMM DD YYYY")
+      date (format: "MMMM DD, YYYY")
       content
       image
+      timeToRead
     }
   }
 </page-query>

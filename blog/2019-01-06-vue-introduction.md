@@ -1,8 +1,8 @@
 ---
 title: "Menjelajah Vue: Pengenalan awal tentang vue"
-date: 2018-09-15
+date: 2019-01-05
 description: "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet."
-image: ""
+image: "/images/featured-15.jpg"
 logo: "/images/vue.svg"
 slug: menjelajah-vue-pengenalan-awal
 ---

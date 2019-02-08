@@ -13,13 +13,13 @@
               <g-image :key="node.path" :src="node.logo" alt="logo_tech" width="26"/>
               <h2 class="journal-title--h2" v-html="node.title" />
             </div>
-            <div class="journal-desc" v-html="node.fields.description"/>
+            <div class="journal-desc" v-html="node.description"/>
           </g-link>
           <span v-html="node.date" />
         </li>
       </ul>
     </div>
-    <div class="article-wrapper">
+    <!-- <div class="article-wrapper">
       <h3>My project labs</h3>
       <ul v-if="$page.allBlogPost.edgess">
         <li v-for="{ node } in $page.allBlogPost.edges" :key="node._id">
@@ -30,7 +30,7 @@
         </li>
       </ul>
       <div id="no-labs" v-else>I didnt have any project</div>
-    </div>
+    </div> -->
   </Layout>
 </template>
 
@@ -42,9 +42,7 @@
           _id
           title
           date (format: "D MMMM, YYYY")
-          fields {
-            description
-          }
+          description
           path
           logo
         }
@@ -69,6 +67,6 @@ export default {
     font-weight: bold;
     cursor: s-resize;
   }
-  padding-top: 30px;
+  padding-top: 3rem;
 }
 </style>
