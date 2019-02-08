@@ -21,11 +21,15 @@ article.journal {
 
 .preload-img__wrapper {
   width: 100%;
+  transition: box-shadow .5s ease;
   position: relative;
   height: 320px;
   overflow: hidden;
   border-radius: 3px;
   margin-bottom: 2rem;
+  &:hover {
+    box-shadow: 0 3px 8px 0 rgba(116,129,141,.2);
+  }
 }
 
 .preload-img {

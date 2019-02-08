@@ -7,7 +7,7 @@
         <div class="preload-img">
           <g-image :src="$page.blogPost.image" />
         </div>
-        <span class="preload-img__detail">photo taken by thedesignest.net</span>
+        <span class="preload-img__detail">{{$page.blogPost.imagedesc}}</span>
       </div>
       <div class="content" v-html="$page.blogPost.content" />
     </article>
@@ -36,6 +36,7 @@ export default {
       content
       image
       timeToRead
+      imagedesc
     }
   }
 </page-query>
