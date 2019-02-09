@@ -10,7 +10,7 @@
         <li v-for="{ node } in $page.allBlogPost.edges" :key="node._id">
           <g-link :to="node.path">
             <div class="journal-title">
-              <g-image :key="node.path" :src="node.logo" alt="logo_tech" width="26"/>
+              <g-image :key="node.path" :src="node.logo" alt="logo_tech"/>
               <h2 class="journal-title--h2" v-html="node.title" />
             </div>
             <div class="journal-desc" v-html="node.description"/>

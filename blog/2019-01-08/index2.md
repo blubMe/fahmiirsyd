@@ -1,10 +1,10 @@
 ---
-title: "Asyncronous pada Javascript"
+title: "Asyncronous pada Typescript"
 date: 2019-01-08
 description: "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet."
-image: "../images/looping.jpg"
-logo: "../images/icons/reactivex.svg"
-slug: asyncronous-pada-javascript
+image: "../images/milkovi-411822-landscape.jpg"
+logo: "../images/icons/typescript.svg"
+slug: asyncronous-pada-typescript
 imagedesc: "by Jay Lee @jayleedosis via Unsplash"
 ---
 
