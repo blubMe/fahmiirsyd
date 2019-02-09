@@ -25,15 +25,11 @@ article.journal {
 
 .preload-img__wrapper {
   width: 100%;
-  transition: box-shadow .5s ease;
   position: relative;
   height: 320px;
   overflow: hidden;
   border-radius: 3px;
   margin-bottom: 2rem;
-  &:hover {
-    box-shadow: 0 3px 8px 0 rgba(116,129,141,.2);
-  }
 }
 
 .preload-img {
@@ -44,18 +40,4 @@ article.journal {
   img {
     -webkit-user-drag: none;
   }
-}
-.preload-img::after {
-  content: "";
-  opacity: 1;
-    background: #f7f7f7 url(/images/preloader.gif);
-    background-position: 50%;
-    background-size: cover;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -2;
 }
