@@ -84,7 +84,7 @@
     a {
       font-size: 12px;
       font-weight: 700;
-      color: rgb(153, 153, 153);
+      color: hsla(0, 0%, 0%, .6);
       text-transform: uppercase;
       padding: 10px 0px 10px 10px;
       transition: color 0.2s ease 0s;
