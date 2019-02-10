@@ -16,5 +16,8 @@
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "vue-styled-components": "^1.4.4"
+  },
+  "resolutions": {
+    "ajv": "6.8.1"
   }
 }
