@@ -16,6 +16,10 @@ export default function (Vue, {router, head, isClient}) {
     name: 'author',
     content: 'Fahmi Irsyad khairi'
   })
+  head.meta.push({
+    name: 'Description',
+    content: 'My little journey'
+  })
   head.link.push({
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Roboto:400,700'
