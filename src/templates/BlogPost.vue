@@ -22,7 +22,10 @@ export default {
       title: this.$page.blogPost.title,
       htmlAttrs: {
         lang: 'id'
-      }
+      },
+      meta: [
+        { name: "Description", content: this.$page.blogPost.description }
+      ]
     }
   }
 }
@@ -34,6 +37,7 @@ export default {
       title
       date (format: "MMMM DD, YYYY")
       content
+      description
       image
       timeToRead
       imagedesc

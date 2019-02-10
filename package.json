@@ -1,7 +1,7 @@
 {
   "name": "fahmiirsyd",
   "private": true,
-  "version": "0.5.3",
+  "version": "0.5.8",
   "author": "Fahmi irsyad khairi <fahmiirsyad10@gmail.com>",
   "scripts": {
     "build": "gridsome build",

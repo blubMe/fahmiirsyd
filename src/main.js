@@ -8,6 +8,14 @@ export default function (Vue, {router, head, isClient}) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 
+  head.meta.push({
+    name: 'theme_color',
+    content: '#FFE037'
+  })
+  head.meta.push({
+    name: 'author',
+    content: 'Fahmi Irsyad khairi'
+  })
   head.link.push({
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Roboto:400,700'
