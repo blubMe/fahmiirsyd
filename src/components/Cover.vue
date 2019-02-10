@@ -18,13 +18,51 @@
     </div>
   </div>
 </template>
-<script>
-// const LinkYellowStyle = () => import('./Linkyellow.styled.js')
+<style lang="scss" scoped>
+.cover {
+  /* background-color: yellow; */
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
 
-// export default {
-//   components: {
-//     'link-yellow-style': LinkYellowStyle
-//   }
-// }
-</script>
+.cover__title {
+  h1 {
+    font-size: 70px;
+    font-family: "Libre Baskerville";
+  }
+  p {
+    padding-top: 30px;
+    max-width: 40vw;
+    font-size: 18px;
+  }
+}
+
+.cover__img {
+  position: relative;
+  max-height: 340px;
+  overflow: hidden;
+  border-radius: 3px;
+  div {
+    position: absolute;
+    top: 0;
+    margin: 10px;
+    span {
+      display: block;
+      color: white;
+      font-weight: bold;
+      padding: 5px 10px;
+      margin: 5px;
+      background-color: black;
+      border-radius: 3px;
+      max-width: 260px;
+    }
+  }
+  img {
+    border-radius: 3px;
+    -webkit-user-drag: none;
+  }
+}
+</style>
 

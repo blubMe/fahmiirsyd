@@ -1,0 +1,24 @@
+/* libre-baskerville-400normal - latin */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    local('Libre Baskerville Regular '),
+    local('Libre Baskerville-Regular'),
+    url('./files/LibreBaskerville-Regular.otf') format('otf');
+}
+
+/* libre-baskerville-700normal - latin */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    local('Libre Baskerville Bold '),
+    local('Libre Baskerville-Bold'),
+    url('./files/LibreBaskerville-Bold.otf') format('otf');
+}
+

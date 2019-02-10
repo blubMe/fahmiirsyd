@@ -1,3 +1,7 @@
+.journal-title img {
+  width: 26px;
+}
+
 .article-wrapper {
   padding-top: 50px;
   span,div.journal-desc { color: rgba(0,0,0,.54); transition: color 0.2s ease 0s; }
@@ -27,7 +31,7 @@
         h2.journal-title--h2 {
           margin-bottom: 10px;
           transition: color 0.2s ease 0s;
-          font-family: 'libre-v1';
+          font-family: 'Libre Baskerville';
         }
       }
       p {
