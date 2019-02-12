@@ -2,14 +2,15 @@
   <Layout>
     <article class="journal">
       <h1>{{ $page.blogPost.title }}</h1>
-      <p class="journal__date">{{ $page.blogPost.date }} / &#x26FA; {{$page.blogPost.timeToRead}} menit membaca</p>
+      <p class="journal__date"> {{ $page.blogPost.date }} -- &#x270d; ditulis di <b>Banyuwangi, ID</b></p>
+      <div v-if="!$page.blogPost.stable" class="journal__warn"><b>Note: </b>Artikel ini masih dalam masa review, kemungkinan masih ada perubahan konten.</div>
       <div v-if="$page.blogPost.image" class="preload-img__wrapper">
         <div class="preload-img">
           <g-image :src="$page.blogPost.image" />
         </div>
         <span class="preload-img__detail">{{$page.blogPost.imagedesc}}</span>
       </div>
-      <div class="content" v-html="$page.blogPost.content" />
+      <div class="content content-img" v-html="$page.blogPost.content" />
     </article>
   </Layout>
 </template>
@@ -41,18 +42,27 @@ export default {
       image
       timeToRead
       imagedesc
+      stable
     }
   }
 </page-query>
 
 <style lang="scss" scoped>
+  .journal__warn {
+    margin: 10px 0;
+    border-radius: 3px;
+    padding: 10px 15px;
+    color: white;
+    background-color: black;
+    width: 100%;
+  }
   article.journal {
     h1 {
       font-family: 'libre-v1';
       font-size: 60px;
     }
     p.journal__date {
-      color: rgba(0, 0, 0, 0.54);
+      color: rgba(0, 0, 0, 0.8);
     }
     span.preload-img__detail {
       color: black;
@@ -83,5 +93,12 @@ export default {
     img {
       -webkit-user-drag: none;
     }
+  }
+  .content {
+    font-size: 1.1rem;
+    width: 780px;
+    margin: 0 auto;
+    color: #404040;
+    line-height: 1.6;
   }
 </style>

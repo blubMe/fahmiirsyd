@@ -48,3 +48,18 @@
     padding: 0;
   }
 }
+
+// blog
+.content {
+  img {
+    margin: 0 auto;
+    border-radius: 3px;
+    display: flex;
+  }
+  p {
+    margin-top: 29px;
+  }
+  h1 {
+    margin-bottom: 2rem;
+  }
+}
