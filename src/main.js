@@ -22,8 +22,11 @@ export default function (Vue, {router, head, isClient}) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 
-  head.meta.push({ name: 'author', content: 'Fahmi Irsyad khairi' })
-  head.meta.push({ name: 'Description', content: 'My little journey' })
+  head.meta.push(
+    { name: 'author', content: 'Fahmi Irsyad khairi' },
+    { name: 'Description', content: 'My little journey' },
+    { property: 'og:image', content:  '/images/favicon.png'},
+  )
 
   head.style.push({
     type: 'text/css',

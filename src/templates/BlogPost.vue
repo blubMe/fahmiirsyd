@@ -25,7 +25,8 @@ export default {
         lang: 'id'
       },
       meta: [
-        { name: "Description", content: this.$page.blogPost.description }
+        { name: "Description", content: this.$page.blogPost.description },
+        { property: "og:image", content: this.$page.blogPost.image.src }
       ]
     }
   }
