@@ -25,6 +25,9 @@ export default function (Vue, {router, head, isClient}) {
   head.meta.push(
     { name: 'author', content: 'Fahmi Irsyad khairi' },
     { name: 'Description', content: 'My little journey' },
+    { name: 'title', content: 'Fahmiirsydk' },
+    { name: 'og:title', content: 'Fahmiirsydk' },
+    { name: 'copyright', content: 'Fahmi Irsyad khairi' },
     { name: 'image', content: '/images/favicon.png' },
     { property: 'og:image', content:  '/images/favicon.png'}
   )
