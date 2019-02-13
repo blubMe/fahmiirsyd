@@ -28,8 +28,6 @@ export default function (Vue, {router, head, isClient}) {
     { name: 'title', content: 'Fahmiirsydk' },
     { name: 'og:title', content: 'Fahmiirsydk' },
     { name: 'copyright', content: 'Fahmi Irsyad khairi' },
-    { name: 'image', content: '/images/favicon.png' },
-    { property: 'og:image', content:  '/images/favicon.png'}
   )
 
   head.style.push({

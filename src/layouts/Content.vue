@@ -11,4 +11,17 @@
   max-width: 100%;
 }
 </style>
+<script>
+export default {
+  metaInfo(){
+    return {
+      meta: [
+        { key: 'image', name: 'image', content: '/images/favicon.png' },
+        { key: 'og:image', property: 'og:image', content:  '/images/favicon.png'}
+      ]
+    }
+  }
+}
+</script>
+
 
