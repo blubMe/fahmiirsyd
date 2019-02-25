@@ -24,6 +24,7 @@
     position: absolute;
     left: 35%;
     cursor: help;
+    -webkit-user-drag: none;
   }
   .notfound__title {
     font-family: 'Libre Baskerville';
