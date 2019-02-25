@@ -11,7 +11,7 @@
     <div class="cover__img">
       <div>
         <span>
-          Memory is a software.
+          Be good in all things.
         </span>
       </div>
       <g-image alt="edge pool" src="~/assets/images/today.jpg" width="260"/>
